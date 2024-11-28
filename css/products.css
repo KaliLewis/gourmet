@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text for contrast */
+}
+
+/* Navbar */
+nav {
+  background-color: #121212; /* Darker shade for navbar */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: #d5b121;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main Headline */
+.main-head-of-products {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 32px;
+  color: #d5b121;
+}
+
+.colored-word-bigger-size {
+  font-size: 35px;
+  color: #d5b121;
+}
+
+/* Section Titles */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #d5b121;
+  margin: 20px 0;
+}
+
+.products-hr {
+  border: 1px solid #d5b121;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Product Containers */
+.kurti, .western, .heels, .g-shoes, .shirts, .shoes, .joggers, .jeans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+}
+
+.kurti img, .western img, .heels img, .g-shoes img, 
+.shirts img, .shoes img, .joggers img, .jeans img {
+  width: 100%; /* Ensures the image fits the container */
+  height: 300px; /* Uniform height for all images */
+  object-fit: cover; /* Ensures images scale without distortion */
+  border-radius: 10px; /* Adds modern rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect for depth */
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kurti img:hover, .western img:hover, .heels img:hover, 
+.g-shoes img:hover, .shirts img:hover, .shoes img:hover, 
+.joggers img:hover, .jeans img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.6);
+}
+
+/* Information Message */
+.msg-ps {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.colored-word {
+  color: #d5b121;
+}
+
+/* Cart Section */
+.cart-details {
+  padding: 20px;
+  color: #fff;
+}
+
+.cart-details h2 {
+  color: #d5b121;
+  text-align: center;
+}
+
+.cart-details ul {
+  list-style-type: decimal;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-details li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.btn-clear-list {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: 1px solid #d5b121;
+  background-color: transparent;
+  color: #d5b121;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-clear-list:hover {
+  background-color: #d5b121;
+  color: #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 974px) {
+  .kurti, .western, .heels, .g-shoes, .shirts, .shoes, .joggers, .jeans {
+    gap: 15px;
+  }
+
+  .msg-ps {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}
+
+/* Footer */
+.sry-msg {
+  text-align: center;
+  color: #d5b121;
+  padding-bottom: 20px;
+}
+
+.last-hr-of-product {
+  border: 1px solid #d5b121;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Utility Classes */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
